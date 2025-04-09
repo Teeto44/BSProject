@@ -4,6 +4,7 @@
 
 [resource]
 albedo_texture = ExtResource("1_i6uya")
+emission = Color(1, 0, 0, 1)
 uv1_scale = Vector3(0.25, 0.25, 0.25)
 uv1_offset = Vector3(0, 0, 0.5)
 uv1_triplanar = true

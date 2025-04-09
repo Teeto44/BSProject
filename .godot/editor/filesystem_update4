@@ -13,3 +13,5 @@ res://src/player/player.gd
 res://src/weapons/machete.tres
 res://res/models/machete_mesh.res
 res://src/player/weapon_holder.gd
+res://res/scenes/prefabs/enviorment/test_room.tscn
+res://src/enemy/enemyIdle.gd
