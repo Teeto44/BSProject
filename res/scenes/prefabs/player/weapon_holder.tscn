@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://d0fhugb8ckr2s" path="res://src/player/weapon_holder.gd" id="1_n0yiw"]
 [ext_resource type="Resource" uid="uid://cp75rvlsidscq" path="res://src/weapons/rifle.tres" id="2_56sla"]
 
-[sub_resource type="PrismMesh" id="PrismMesh_sm3yx"]
+[sub_resource type="BoxMesh" id="BoxMesh_qnyvs"]
 
 [node name="weapon_holder" type="Node3D"]
 script = ExtResource("1_n0yiw")
@@ -11,5 +11,5 @@ current_weapon = ExtResource("2_56sla")
 
 [node name="weapon_mesh" type="MeshInstance3D" parent="."]
 unique_name_in_owner = true
-mesh = SubResource("PrismMesh_sm3yx")
+mesh = SubResource("BoxMesh_qnyvs")
 skeleton = NodePath("../../../..")

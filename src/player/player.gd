@@ -24,7 +24,7 @@ func _input(event: InputEvent) -> void:
 			get_tree().quit()
 
 	if event.is_action_pressed("weapon_1"):
-		var new_weapon = load("res://src/weapons/rifle.tres")
+		var new_weapon = load("res://src/weapons/machete.tres")
 		weapon_holder.current_weapon = new_weapon
 		
 	if event.is_action_pressed("weapon_2"):
@@ -40,6 +40,11 @@ func look(event: InputEvent) -> void:
 
 func _physics_process(delta: float) -> void:
 	movement(delta)
+	handle_firing()
+
+func handle_firing():
+	if Input.is_action_just_pressed("fire"):
+		weapon_holder.fire()
 
 func movement(delta: float) -> void:
 	direction = Input.get_axis("left", "right") * player.basis.x + Input.get_axis("forward", "backwards") * player.basis.z
